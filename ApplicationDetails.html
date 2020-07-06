@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAN FORM</title>
+  
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./ApplicationDetails.css">
+</head>
+<body >
+    <div class="container parent-deco">  
+        <!-- onsubmit = "return(ValidateForm());" -->
+        <!-- onsubmit is an event listener -->
+            <form class="loaning" name="Application" onsubmit="return handleSubmit();">
+                <div class="container form-deco">
+                    <div class="row">
+                        <div class="col-md-12 main">
+                           
+                            <div class="wrap">
+                                <dv class="AppL">
+                                    <div class="AppL-head">
+                                        <h2>
+                                            <span></span>
+                                            Applicants Loan Details
+                                        </h2>
+                                    </div>
+                                </dv>
+                            </div>
+                            <input type="text" id="firstname" name="firstname" placeholder="first Name"> <br>
+                            <input type="text" id="Secondname" name="Secondname"  placeholder="Second Name"> <br> 
+                            <input type="text" id="Phone_Contact"  name="Phone_Contact"  placeholder="Phone Contact"> <br>
+                            <input type="email" id="Email" name="Email"  placeholder="Email"> <br>
+                            <input type="text" id="NIN_ID" name="NIN_ID"  placeholder="NIN_ID">  <br>
+                            <input type="text" id="Security" name="Security"  placeholder="Collateral Security"> <br>
+                            <input type="text" id="Desired_Amount" name="Desired_Amount" placeholder="Desired Amount"> <br>
+                            <input type="text"  id="Guarantor"  name="Guarantor" placeholder="Guarantor's Name"> <br>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="previous">
+                    <div class="CB">
+                        <label class="check-box">
+                            <input type="checkbox" name="checkbox" checked="">
+                            <i></i>
+                            Is this your first time applying?
+                        </label>
+                    </div>
+
+                </div>
+                <div class="sign">
+                    <input type="Submit" name="Submit" value="Register" class="btn btn-success">
+                </div>
+            </form>
+
+    
+    </div>
+    <script src="./ApplicationDetails.js"></script>
+    
+
+
+</body>
+</html>
